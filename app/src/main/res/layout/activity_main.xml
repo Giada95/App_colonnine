@@ -9,18 +9,19 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="148dp">
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp"
+        tools:ignore="ExtraText,MissingConstraints">
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="60dp"
-            android:layout_height="60dp"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
             android:layout_alignLeft="@+id/imageView2"
             android:layout_alignParentTop="true"
             android:layout_alignStart="@+id/imageView2"
             android:layout_marginTop="37dp"
-            app:srcCompat="@drawable/icona_geolocalizzazione" />
+            app:srcCompat="@drawable/localizzazione" android:contentDescription="TODO" />
 
         <ImageView
             android:id="@+id/imageView2"
@@ -30,7 +31,8 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/imageView"
             android:layout_marginTop="19dp"
-            app:srcCompat="@drawable/ricarica1" />
+            app:srcCompat="@drawable/ricarica"
+            tools:ignore="ContentDescription" />
 
         <ImageView
             android:id="@+id/imageView3"
@@ -40,19 +42,18 @@
             android:layout_alignParentStart="true"
             android:layout_below="@+id/imageView2"
             android:layout_marginTop="18dp"
-            app:srcCompat="@drawable/SUPPORTO1" />
+            app:srcCompat="@drawable/supporto1" />
 
         <ImageView
             android:id="@+id/imageView4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_below="@+id/imageView3"
-            android:layout_marginLeft="136dp"
-            android:layout_marginStart="136dp"
-            android:layout_marginTop="24dp"
-            android:layout_toEndOf="@+id/imageView3"
-            android:layout_toRightOf="@+id/imageView3"
-            app:srcCompat="@drawable/logo" />
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="14dp"
+            android:layout_marginStart="14dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            app:srcCompat="@drawable/logo" android:contentDescription="TODO" />
 
         <TextView
             android:id="@+id/textView"
@@ -61,7 +62,9 @@
             android:layout_above="@+id/imageView2"
             android:layout_toEndOf="@+id/imageView"
             android:layout_toRightOf="@+id/imageView"
-            android:text="Dove vuoi ricaricare?" />
+            android:text="@string/dove_vuoi_ricaricare"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView2"
@@ -71,7 +74,12 @@
             android:layout_marginTop="14dp"
             android:layout_toEndOf="@+id/imageView2"
             android:layout_toRightOf="@+id/imageView2"
-            android:text="Tipo di ricarica" />
+            android:shadowColor="@android:color/holo_green_dark"
+            android:text="Tipo di ricarica"
+            android:textColor="@android:color/holo_green_dark"
+            android:textColorHighlight="@android:color/holo_green_dark"
+            android:textColorHint="@android:color/holo_green_dark"
+            android:textStyle="bold" />
 
         <TextView
             android:id="@+id/textView3"
@@ -83,7 +91,134 @@
             android:layout_marginLeft="12dp"
             android:layout_marginStart="12dp"
             android:layout_marginTop="15dp"
-            android:text="Supporto" />
+            android:text="Supporto"
+            android:textColor="@android:color/holo_green_dark"
+            android:textColorHint="@android:color/holo_green_dark"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton2"
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/textView2"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_marginLeft="18dp"
+            android:layout_marginStart="18dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:layout_toRightOf="@+id/textView2"
+            android:buttonTint="@android:color/holo_green_dark"
+            android:text="Standard"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold" />
+
+        <RadioButton
+            android:id="@+id/radioButton3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/radioButton2"
+            android:layout_alignBottom="@+id/radioButton2"
+            android:layout_marginLeft="19dp"
+            android:layout_marginStart="19dp"
+            android:layout_toEndOf="@+id/radioButton2"
+            android:layout_toRightOf="@+id/radioButton2"
+            android:buttonTint="@android:color/holo_green_dark"
+            android:text="@string/veloce"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            tools:text="Veloce" />
+
+        <ListView
+            android:id="@+id/listView"
+            android:layout_width="150dp"
+            android:layout_height="20dp"
+            android:layout_alignTop="@+id/textView3"
+            android:layout_toEndOf="@+id/button"
+            android:layout_toRightOf="@+id/button"
+            android:background="@android:color/darker_gray"
+            android:cacheColorHint="@android:color/darker_gray" />
+
+        <MultiAutoCompleteTextView
+            android:id="@+id/multiAutoCompleteTextView"
+            android:layout_width="200dp"
+            android:layout_height="20dp"
+            android:layout_alignLeft="@+id/listView"
+            android:layout_alignStart="@+id/listView"
+            android:layout_alignTop="@+id/textView"
+            android:text="MultiAutoCompleteTextView" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignBottom="@+id/imageView6"
+            android:layout_toEndOf="@+id/imageView6"
+            android:layout_toRightOf="@+id/imageView6"
+            android:text="TextView"
+            android:textColor="@android:color/holo_green_dark"
+            android:textIsSelectable="false"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            tools:text="Vuoi aggiungere una nuova colonnina?" />
+
+        <Button
+            android:id="@+id/button"
+            style="@style/Widget.AppCompat.Button"
+            android:layout_width="60dp"
+            android:layout_height="40dp"
+            android:layout_below="@+id/imageView3"
+            android:layout_marginTop="19dp"
+            android:layout_toEndOf="@+id/textView3"
+            android:layout_toRightOf="@+id/textView3"
+            android:background="?attr/colorButtonNormal"
+            android:elevation="0dp"
+            android:text="Button"
+            android:textColor="@android:color/holo_green_dark"
+            android:textStyle="bold"
+            tools:text="GO" />
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignTop="@+id/button"
+            android:layout_toEndOf="@+id/button"
+            android:layout_toRightOf="@+id/button"
+            app:srcCompat="@drawable/lampo" />
+
+        <ImageView
+            android:id="@+id/imageView6"
+            android:layout_width="55dp"
+            android:layout_height="60dp"
+            android:layout_alignEnd="@+id/imageView3"
+            android:layout_alignRight="@+id/imageView3"
+            android:layout_below="@+id/imageView5"
+            app:srcCompat="@drawable/lampadina" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView5"
+            android:layout_alignParentTop="true"
+            android:layout_alignRight="@+id/textView5"
+            android:text="TextView"
+            android:textColor="@android:color/holo_green_dark"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            tools:text="Colonnine Elettriche" />
+
+        <ImageButton
+            android:id="@+id/imageButton"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignBottom="@+id/textView5"
+            android:layout_toEndOf="@+id/textView5"
+            android:layout_toRightOf="@+id/textView5"
+            android:backgroundTint="@android:color/background_light"
+            android:tint="@android:color/holo_green_light"
+            app:srcCompat="@android:drawable/ic_menu_send" />
+
     </RelativeLayout>
 
 </android.support.constraint.ConstraintLayout>

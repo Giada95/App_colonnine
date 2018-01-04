@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">App_colonnine</string>
+    <string name="veloce">Veloce</string>
+    <string name="dove_vuoi_ricaricare">Dove vuoi ricaricare?</string>
 </resources>
