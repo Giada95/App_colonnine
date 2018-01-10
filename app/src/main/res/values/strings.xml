@@ -2,4 +2,14 @@
     <string name="app_name">App_colonnine</string>
     <string name="veloce">Veloce</string>
     <string name="dove_vuoi_ricaricare">Dove vuoi ricaricare?</string>
+    <string name="title_activity_dettaglicolonnina">dettaglicolonnina</string>
+    <string name="indirizzcolongenerico">indirizzcolongenerico</string>
+    <string name="indirizzocolon">indirizzocolon</string>
+    <string name="supportodisp">supportodisp</string>
+    <string name="map">map</string>
+    <string name="ricarica_supportata">Ricarica Supportata:</string>
+    <string name="indirizzogenerico">Indirizzogenerico</string>
+    <string name="tiporicarica">Tiporicarica</string>
+    <string name="supporti">Supporti</string>
+    <string name="mappa">Mappa</string>
 </resources>
