@@ -36,5 +36,15 @@
     <string name="textview10">TextView10</string>
     <string name="textview11">TextView11</string>
     <string name="textview13">TextView13</string>
+    <string name="colonnina">colon</string>
+    <string name="Luogo">Luogo</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="Tipo">Tipo</string>
+    <string name="Distributore">Distributore</string>
+    <string name="Via">Via</string>
+    <string name="obbligatorio" />
+    <string name="errore_login" />
+    <string name="button">Button</string>
 
 </resources>

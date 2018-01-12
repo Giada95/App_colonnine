@@ -137,8 +137,8 @@
             android:layout_width="150dp"
             android:layout_height="20dp"
             android:layout_alignTop="@+id/textView3"
-            android:layout_toEndOf="@+id/button"
-            android:layout_toRightOf="@+id/button"
+            android:layout_toEndOf="@+id/Button"
+            android:layout_toRightOf="@+id/Button"
             android:background="@android:color/darker_gray"
             android:cacheColorHint="@android:color/darker_gray" />
 
@@ -166,7 +166,7 @@
             tools:text="Vuoi aggiungere una nuova colonnina?" />
 
         <Button
-            android:id="@+id/button"
+            android:id="@+id/Button"
             style="@style/Widget.AppCompat.Button"
             android:layout_width="60dp"
             android:layout_height="40dp"
@@ -186,9 +186,9 @@
             android:id="@+id/imageView5"
             android:layout_width="40dp"
             android:layout_height="40dp"
-            android:layout_alignTop="@+id/button"
-            android:layout_toEndOf="@+id/button"
-            android:layout_toRightOf="@+id/button"
+            android:layout_alignTop="@+id/Button"
+            android:layout_toEndOf="@+id/Button"
+            android:layout_toRightOf="@+id/Button"
             android:contentDescription="@string/lampo"
             app:srcCompat="@drawable/lampo" />
 

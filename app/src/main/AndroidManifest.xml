@@ -25,10 +25,6 @@
             android:label="@string/title_activity_login"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".login_Activity"
-            android:label="@string/title_activity_login_"
-            android:theme="@style/AppTheme.NoActionBar" />
-        <activity
             android:name=".login_activity1"
             android:label="@string/title_activity_login_activity1"
             android:theme="@style/AppTheme.NoActionBar" />

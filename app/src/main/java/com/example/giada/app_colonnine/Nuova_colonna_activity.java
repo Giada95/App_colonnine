@@ -12,7 +12,7 @@ public class Nuova_colonna_activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_nuova_colonna_activity);
+        setContentView(R.layout.activity_login_activity1);
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 

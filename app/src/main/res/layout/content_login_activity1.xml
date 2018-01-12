@@ -10,51 +10,34 @@
 
 
         <TextView
-            android:id="@+id/textView4"
+            android:id="@+id/textViewUsername"
             android:layout_width="150dp"
             android:layout_height="30dp"
             android:layout_alignLeft="@+id/imageView7"
-            android:layout_alignParentTop="true"
-            android:layout_alignStart="@+id/imageView7"
-            android:layout_marginTop="178dp"
+            android:layout_below="@+id/textView12"
+            android:layout_marginTop="58dp"
+            android:contentDescription="@string/username"
             android:text="@string/textview"
             android:textColor="@android:color/holo_green_dark"
             android:textSize="20sp"
             android:textStyle="bold"
-            tools:text="Nome:"
-            android:contentDescription="@string/nome" />
+            tools:text="Username:"
+            android:layout_alignStart="@+id/imageView7" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/textViewPassw"
         android:layout_width="150dp"
         android:layout_height="40dp"
-        android:layout_below="@+id/editText"
+        android:layout_below="@+id/editUsername"
         android:layout_marginTop="15dp"
-        android:layout_toLeftOf="@+id/editText"
-        android:layout_toStartOf="@+id/editText"
+        android:layout_toLeftOf="@+id/editUsername"
+        android:layout_toStartOf="@+id/editUsername"
         android:contentDescription="@string/Cognome"
-        android:text="@string/textview"
+        android:text="@string/password"
         android:textColor="@android:color/holo_green_dark"
         android:textSize="20sp"
         android:textStyle="bold"
-        tools:text="Cognome:" />
-
-    <TextView
-        android:id="@+id/textView8"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/textView7"
-        android:layout_alignStart="@+id/textView7"
-        android:layout_below="@+id/textView7"
-        android:layout_marginTop="21dp"
-        android:layout_toLeftOf="@+id/textView12"
-        android:layout_toStartOf="@+id/textView12"
-        android:contentDescription="@string/Email"
-        android:text="@string/textview"
-        android:textColor="@android:color/holo_green_dark"
-        android:textSize="20sp"
-        android:textStyle="bold"
-        tools:text="Email:" />
+        tools:text="Password:" />
 
     <TextView
         android:id="@+id/textView12"
@@ -83,48 +66,38 @@
         app:srcCompat="@drawable/login" />
 
     <EditText
-        android:id="@+id/editText"
+        android:id="@+id/editUsername"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_alignTop="@+id/textView4"
-        android:layout_toEndOf="@+id/textView4"
-        android:layout_toRightOf="@+id/textView4"
+        android:layout_alignTop="@+id/textViewUsername"
+        android:layout_toEndOf="@+id/textViewUsername"
+        android:layout_toRightOf="@+id/textViewUsername"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/name" />
+        android:hint="@string/username"
+        android:inputType="textPersonName" />
 
     <EditText
-        android:id="@+id/editText2"
+        android:id="@+id/editPassw"
         android:layout_width="200dp"
         android:layout_height="40dp"
-        android:layout_alignTop="@+id/textView7"
-        android:layout_toEndOf="@+id/textView7"
-        android:layout_toRightOf="@+id/textView7"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textViewPassw"
+        android:layout_toRightOf="@+id/textViewPassw"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/surname" />
+        android:hint="@string/password"
+        android:inputType="textPersonName" />
 
-    <EditText
-        android:id="@+id/editText3"
-        android:layout_width="200dp"
-        android:layout_height="40dp"
-        android:layout_alignTop="@+id/textView8"
-        android:layout_toEndOf="@+id/textView7"
-        android:layout_toRightOf="@+id/textView7"
-        android:ems="10"
-        android:inputType="textWebEmailAddress"
-        android:text="@android:string/defaultVoiceMailAlphaTag"
-        tools:text="Email" />
-
-    <ImageButton
-        android:id="@+id/imageButton2"
+    <Button
+        android:id="@+id/Button"
         android:layout_width="60dp"
         android:layout_height="60dp"
-        android:layout_alignEnd="@+id/editText3"
-        android:layout_alignRight="@+id/editText3"
-        android:layout_below="@+id/editText3"
-        android:layout_marginTop="25dp"
-        android:contentDescription="@string/imageButton2"
-        app:srcCompat="@android:drawable/checkbox_on_background" />
+        android:layout_below="@+id/editPassw"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="57dp"
+        android:contentDescription="@string/Button"
+        android:text="@string/button"
+        tools:text="->" />
+
+
 </RelativeLayout>
 

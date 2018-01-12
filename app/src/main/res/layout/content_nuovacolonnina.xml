@@ -46,7 +46,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
-        tools:text="Qual'è il supporto?" />
+        tools:text="Qual è il supporto?" />
 
     <TextView
         android:id="@+id/textView11"
@@ -61,11 +61,11 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.281"
+        app:layout_constraintHorizontal_bias="0.211"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.451"
-        tools:text="Che ricarica puo essere fatta?" />
+        tools:text="Tipo Ricarica" />
 
     <TextView
         android:id="@+id/textView13"
@@ -88,8 +88,8 @@
 
     <ImageView
         android:id="@+id/imageView8"
-        android:layout_width="40"
-        android:layout_height="30"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -105,8 +105,8 @@
 
     <ImageView
         android:id="@+id/imageView9"
-        android:layout_width="40"
-        android:layout_height="30"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -122,8 +122,8 @@
 
     <ImageView
         android:id="@+id/imageView10"
-        android:layout_width="40"
-        android:layout_height="30"
+        android:layout_width="40dp"
+        android:layout_height="30dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -139,8 +139,8 @@
 
     <EditText
         android:id="@+id/editText4"
-        android:layout_width="100"
-        android:layout_height="20"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -158,8 +158,8 @@
 
     <EditText
         android:id="@+id/editText5"
-        android:layout_width="100"
-        android:layout_height="20"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -176,8 +176,8 @@
 
     <RadioButton
         android:id="@+id/radioButton"
-        android:layout_width="76"
-        android:layout_height="20"
+        android:layout_width="76dp"
+        android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -196,8 +196,8 @@
 
     <RadioButton
         android:id="@+id/radioButton4"
-        android:layout_width="90"
-        android:layout_height="20"
+        android:layout_width="90dp"
+        android:layout_height="20dp"
         android:layout_marginBottom="8dp"
         android:layout_marginEnd="8dp"
         android:layout_marginStart="8dp"
@@ -208,7 +208,7 @@
         android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.748"
+        app:layout_constraintHorizontal_bias="0.672"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.452" />
