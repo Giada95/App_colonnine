@@ -26,7 +26,9 @@
     <string name="Button">Button</string>
     <string name="button1">button1</string>
     <string name="supporto">Supporto</string>
-    <string name="textview">TextView</string>
+    <string name="mappa">mappa</string>
+    <string name="map">map</string>
+    <string name="indirizzo_generico">indirizzo_generico</string>
     <string name="tipo_di_ricarica">Tipo di ricarica</string>
     <string name="standard">Standard</string>
     <string name="multiautocompletetextview">MultiAutoCompleteTextView</string>
@@ -36,5 +38,24 @@
     <string name="textview10">TextView10</string>
     <string name="textview11">TextView11</string>
     <string name="textview13">TextView13</string>
+    <string name="colonnina">colon</string>
+    <string name="Luogo">Luogo</string>
+    <string name="password">password</string>
+    <string name="username">username</string>
+    <string name="Tipo">Tipo</string>
+    <string name="Distributore">Distributore</string>
+    <string name="Via">Via</string>
+    <string name="obbligatorio" />
+    <string name="errore_login" />
+    <string name="title_activity_dettagli_colonnina">dettagli_colonnina</string>
+    <string name="textview">TextView</string>
+    <string name="title_activity_login1">Login1</string>
+    <string name="title_activity_nuova_colonnina">nuova_colonnina</string>
+
+
+    <string name="radiobutton">RadioButton</string>
+
+
+
 
 </resources>
