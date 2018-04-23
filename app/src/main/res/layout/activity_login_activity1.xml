@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<android.support.design.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="com.example.giada.app_colonnine.login_activity1">
+    tools:context="com.example.giada.app_colonnine.login">
 
     <android.support.design.widget.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/AppTheme.AppBarOverlay">
+
 
         <android.support.v7.widget.Toolbar
             android:id="@+id/toolbar"
@@ -20,14 +22,104 @@
 
     </android.support.design.widget.AppBarLayout>
 
-    <include layout="@layout/content_login_activity1" />
+    <TextView
+        android:id="@+id/textUsername"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_above="@+id/textViewPassw"
+        android:layout_alignLeft="@+id/imageView7"
+        android:layout_alignStart="@+id/imageView7"
+        android:contentDescription="@string/username"
+        android:text="@string/textview"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        tools:text="Username:"
+        android:layout_marginBottom="18dp" />
 
-    <android.support.design.widget.FloatingActionButton
-        android:id="@+id/fab"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="@dimen/fab_margin"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
+    <TextView
+        android:id="@+id/textPassw"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/editPassw"
+        android:layout_toLeftOf="@+id/editUsername"
+        android:layout_toStartOf="@+id/editUsername"
+        android:contentDescription="@string/Cognome"
+        android:text="@string/password"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="20sp"
+        android:textStyle="bold|italic"
+        tools:text="Password:" />
+
+    <TextView
+        android:id="@+id/textView12"
+        android:layout_width="180dp"
+        android:layout_height="60dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"
+        android:contentDescription="@string/LOGIN"
+        android:text="@string/textview"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_light"
+        android:textSize="50sp"
+        android:textStyle="bold|italic"
+        tools:text="LOGIN:" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="100dp"
+        android:layout_height="70dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignTop="@+id/textView12"
+        android:layout_marginLeft="12dp"
+        android:layout_marginStart="12dp"
+        android:contentDescription="@string/image7"
+        app:srcCompat="@drawable/login" />
+
+    <EditText
+        android:id="@+id/editUsername"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_alignTop="@+id/textViewUsername"
+        android:layout_toEndOf="@+id/textViewUsername"
+        android:layout_toRightOf="@+id/textViewUsername"
+        android:ems="10"
+        android:hint="@string/username"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        tools:text="Username" />
+
+    <EditText
+        android:id="@+id/editPassw"
+        android:layout_width="180dp"
+        android:layout_height="48dp"
+        android:layout_centerVertical="true"
+        android:layout_toEndOf="@+id/textViewPassw"
+        android:layout_toRightOf="@+id/textViewPassw"
+        android:ems="10"
+        android:hint="@string/password"
+        android:inputType="textPersonName"
+        android:textColor="@android:color/background_dark"
+        android:textSize="20sp"
+        android:textStyle="italic"
+        tools:text="Password" />
+
+    <ImageButton
+        android:id="@+id/btnLogin"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_below="@+id/textViewPassw"
+        android:layout_marginTop="42dp"
+        android:layout_toLeftOf="@+id/editPassw"
+        android:layout_toStartOf="@+id/editPassw"
+        android:contentDescription="@string/Button"
+        app:srcCompat="@android:drawable/checkbox_on_background" />
+
+
+
 
 </android.support.design.widget.CoordinatorLayout>
