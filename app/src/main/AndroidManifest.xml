@@ -17,8 +17,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".dettaglicolonnina"
-            android:label="@string/title_activity_dettaglicolonnina"
+            android:name=".elenco_colonne_Activity"
+            android:label="@string/title_activity_elenco_colonne_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login"
+            android:label="@string/title_activity_login"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login_Activity"
+            android:label="@string/title_activity_login_"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".login_activity1"
+            android:label="@string/title_activity_login_activity1"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".Nuova_colonna_activity"
+            android:label="@string/title_activity_nuova_colonna_activity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".nuovacolonnina"
+            android:label="@string/title_activity_nuovacolonnina"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".elenco_colonne"
+            android:label="@string/title_activity_elenco_colonne"
             android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
