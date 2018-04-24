@@ -107,15 +107,15 @@
 
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_alignBottom="@+id/imageView2"
-            android:layout_alignLeft="@+id/listView"
-            android:layout_alignStart="@+id/listView"
+            android:layout_alignBottom="@+id/textView2"
+            android:layout_alignLeft="@+id/spinner"
             android:buttonTint="@android:color/background_dark"
             android:contentDescription="@string/standard"
             android:text="@string/standard"
             android:textColor="@android:color/background_dark"
             android:textSize="18sp"
-            android:textStyle="italic" tools:targetApi="lollipop"/>
+            android:textStyle="italic"
+            tools:targetApi="lollipop" />
 
         <RadioButton
             android:id="@+id/radioButton3"
@@ -150,9 +150,8 @@
             android:id="@+id/multiAutoCompleteTextView"
             android:layout_width="180dp"
             android:layout_height="48dp"
-            android:layout_alignLeft="@+id/listView"
-            android:layout_alignStart="@+id/listView"
             android:layout_alignTop="@+id/textView"
+            android:layout_toRightOf="@+id/textView2"
             android:contentDescription="@string/Luogo"
             android:text="@string/multiautocompletetextview"
             tools:text="Luogo" />
